@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700;900&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Portfolio-Mariana-Romaniuk</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto Slab', serif;
+        }
+        .conteiner{
+        height: 100%; 
+
+        }
+        .navbar{
+          background-color: #481c0d; !important             
+        }
+        
+        .nav-link{
+            color: #c0ab94;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 0;
+        }
+    
+        .home-bg {
+            background-image: url("https://my-bucket-1008.s3.amazonaws.com/front-page.png");  
+            height: 100%;    
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                                   
+        }
+        .home-bg, .resume, .about, .contact, .portfolio {
+            background-color:  #c0ab94;
+/*#c6b295;*/             
+            padding: 20px; 
+            
+        }
+        .logo {
+             -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            height: 40px;
+        }
+        .mr{
+            font-size: 90px;
+            font-weight: bold;
+            color: #300a03;  
+            line-height: 90px;            
+            margin-top: 120px;
+            margin-bottom: 40px;
+            text-shadow: #fff 1px 0 10px;
+        }
+        .mr:hover{
+            font-size: 91px;
+            transition: 0.4s;
+        }
+        .start-text{
+            font-size: 25px;
+            font-weight: bold;
+            color: #120302;  
+            line-height: 30px;            
+            
+        
+        }
+        .start-text-marg{
+            margin-top: 40px;          
+
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .bg-start{
+           text-shadow: #fff 1px 0 10px;
+        }
+        
+        .icon {
+            height: 50px;
+            margin: 0 auto;
+            display: block;
+        }
+        .icon-2 {
+            height: 60px;
+            margin: 0 auto;
+            display: block;
+        }
+        .pad-about{
+            padding: 10px;
+        }
+        
+     /*div {
+        border: dashed #fff;
+     }*/
+     .crm-manager-1{
+        background-image: url("https://my-bucket-1008.s3.amazonaws.com/Frame+7-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;           
+           }
+     
+     .crm-manager-2{
+        background-image: url("https://my-bucket-1008.s3.amazonaws.com/Frame+7-2.png");
+        background-repeat: no-repeat; 
+        background-size: cover;      
+                 
+     }
+     .crm-manager-3{
+        background-image: url("https://my-bucket-1008.s3.amazonaws.com/Frame+7-3.png");
+        background-repeat: no-repeat; 
+        background-size: cover;             
+     }
+     
+    .crm-manager-1:hover , .crm-manager-3:hover{
+      background-image: url("https://my-bucket-1008.s3.amazonaws.com/Frame+7-2.png");
+      transition: 0.7s;      
+     }
+     .crm-manager-2:hover {
+      background-image: url("https://my-bucket-1008.s3.amazonaws.com/Frame+7-1.png");
+      transition: 0.7s;      
+     }
+     .crm-manager-1, .crm-manager-2, .crm-manager-3 {
+        padding: 15px;        
+     }
+     .container-about {
+  position: relative;
+  
+}
+
+.img-about {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-about:hover .img-about {
+  opacity: 0.3;
+  box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5);
+}
+
+.container-about:hover .middle {
+  opacity: 1;
+}
+
+.text {
+font-size: 70px;
+font-weight: bold;
+color: #300a03;  
+line-height: 90px;          
+text-shadow: #fff 1px 0 10px;
+}
+.collapse {
+margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #120302;
+    font-weight: bold;  
+    font-size: 18px; 
+    line-height: 22px;
+}  
+a:hover {
+     text-decoration: underline;
+}  
+::placeholder { 
+  color: #120302;  
+}
+ul, .p-about{
+    color: #120302;
+    font-weight: bold;
+    font-size: 18px; 
+    line-height: 22px;   
+    text-shadow: #fff 1px 0 10px;
+}
+.width-50{
+max-width: 50%;
+margin: 0 auto;
+}
+
+
+    </style>
+</head>
+<body>    
+    
+    <div class="conteiner">
+        <div class="row" style="margin: 0;">
+            <nav class="navbar navbar-expand-lg sticky">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="https://my-bucket-1008.s3.amazonaws.com/lion-head-side-view-outline-svgrepo-com+(1).svg" class="logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row home-bg">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-6 ">
+                    </div>
+                    <div class="col-sm-6 ">
+                        <p class="mr"> Mariana <br> Romaniuk
+                        </p>
+                        <p class="start-text bg-start start-text-marg">
+                            #CRM_Specialist, <br>
+                            #Marketing_Automation, <br>
+                            #Email_Marketing.
+                        </p>
+                        <p class="start-text bg-start start-text-marg" style="max-width: 80%;">
+                            I am a creative and data-driven marketing technology specialist. I have experience ranging from setting up customer
+                            journey campaigns to building a multi-channel strategy for client retention.
+                
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="row resume" >
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1
+                            style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin-top: 20px; ">
+                            I know how to work with
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                
+                    <div class="col">
+                
+                        <img src="https://media.giphy.com/media/6aBqm4gVgfBEvddM6X/giphy.gif" alt="/"
+                            style="height:90px; transform: rotate(90deg);  margin: 0 auto;  display: block;">
+                    </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/629a430c3e59ee069da94c88.png" class="icon"
+                            alt="Google Analytics">
+                    </div>
+                
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/62a5da618945bd77068d0b79.png" class="icon" alt="Customer.io">
+                    </div>
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/62c6bc0beee9410fe137d91e.png" class="icon" alt="Figma">
+                    </div>
+                
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/62c46460a75b8945b1696706.png" class="icon-2" alt="Twilio">
+                    </div>
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/logo-e2eddd4e.png" class="icon" alt="Mailchimp">
+                    </div>
+                    
+                
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/kisspng-computer-icons-sql-computer-file-portable-network-some-best-practices-for-coding-and-programming-5ca6a329eed070.2746655415544246179782.png"
+                            class="icon" alt="SQL">
+                    </div>
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/html5-logo-31816.png" class="icon" alt="HTML CSS JS">
+                    </div>
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/61045dfc9cd69c000418c11a.png" class="icon" alt="Excel">
+                    </div>
+                
+                    <div class="col">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/62a79050e42d729d928b1756.png" class="icon-2"
+                            alt="Visual Studio Code">
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col">
+                        <h1 style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin: 40px auto 25px ; ">
+                            What I have experience doing
+                        </h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4 crm-manager-1">
+                        <p style="color: #120302; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            CRM Manager <br> <span style=" font-size: 22px;"> Magnetics, 5/21 - 1/22</span>
+                        </p>               
+                            
+                        <ul>
+                            <li>Engaged and retained clients via email, SMS, and push,</li>
+                            <li>Prepared customer journeys and promo campaigns,</li>
+                            <li>Managed marketing calendar,</li>
+                            <li>Wrote briefs for copywriters and designers,</li>
+                            <li>Analyzed results and used best practices to increase conversion,</li>
+                            <li>Segmented clients based on behavioral data,</li>
+                            <li>Ran A/B testing to reveal clients' preferences.</li>
+                        </ul>                
+                        
+                    </div>
+                    <div class="col-sm-4 crm-manager-2">
+                        <p style="color: #120302;; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            Marketing Automation Specialist <br> <span style=" font-size: 22px;"> Maxitech Software, 9/19 - 10/20</span>
+                        </p>
+                        <ul>
+                            <li>Created and scheduled email marketing campaigns,</li>
+                            <li>Built customer segmentation to optimize campaign performance,</li>
+                            <li>Collaborated with creative team regarding email templates,</li>
+                            <li>Ran A/B tests for optimization of conversion rate,</li>
+                            <li>Analyzed campaign performance (OR, CTR, CR),</li>
+                            <li>Provided recommendations to increase conversion,</li>
+                            <li>Tracked IP reputation, CAN-SPAM rate, and email blacklisting.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 crm-manager-3">
+                        <p style="color: #120302; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            Sales Analyst <br> <span style=" font-size: 22px;"> Vodafone Ukraine, 11/16 - 7/19</span>
+                        </p>
+                        <ul>
+                            <li>Prepared analytical sales reports and dashboards,</li>
+                            <li>Analyzed weekly, monthly, and yearly sales results,</li>
+                            <li>Measured and reported performance of motivational programs,</li>
+                            <li>Calculated target KPI for sales team and partners,</li>
+                            <li>Collaborated with IT department regarding report automation,</li>
+                            <li>Assisted sales team in calculating KPI results,</li>
+                            <li>Prepared ad-hog tasks using SQL queries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="row portfolio">
+            <div class="col">
+                <div class="row">              
+                    <div class="col width-50">                       
+                        <h1 style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin: 40px auto 25px ; ">
+                            Portfolio
+                        </h1>                        
+                        <p class="p-about" >
+                            <span style="opacity: .7;">  Case:</span> Online pet store wants to deploy automated email communication with clients and increase purchases.
+                        </p>
+                        <p class="p-about">
+                            <span style="opacity: .7;"> Solution:</span> Created a series of welcome emails that introduces the store's products and services, presents discounts, loyalty
+                            program benefits, and shares customer success stories.
+                        </p>
+                        <p class="p-about">
+                            Based on customer activity, the journey is divided into three paths:
+                        </p>
+                        <ul>
+                            <li>clients who made only one purchase,</li>
+                            <li>clients who made two and more purchases,</li>
+                            <li>clients who signed up and did not make a purchase.</li>                            
+                        </ul>
+                        <p class="p-about">
+                            <span style="opacity: .7;"> Tone of voice:</span> A cute dog named Bark communicates with customers in a friendly manner.
+                        </p>
+                        
+                        
+                    </div>        
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p style="color: #120302;; font-weight: bold;  font-size: 22px; text-shadow: #fff 1px 0 10px; text-align: center;">
+                            Welcome Email Series
+                        </p>
+                
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/Frame+11.png" alt="Welcome Email Series" class="img-fluid">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row about">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-4 pad-about" >
+                        <h1 style="color: #120302; font-weight: bold; font-size: 30px; text-shadow: #fff 1px 0 10px;  ">About me</h1> <br>
+                        <p class="p-about">
+                        I barely see the road, cold wind blowing in my face… <br>
+                        The sky is dawning. I feel my bike surge beneath me. I want to reach observation point before sunrise.
+                        </p>
+                        <p class="p-about">
+                        I barely see the road, cold wind blowing in my face… <br>
+                        Rain in the mountains. Oh no, it's a thunderstorm. I want to get to the top before dark.  
+                        </p>
+                        <p class="p-about">
+                        I barely see the road, cold wind blowing in my face… <br>
+                        The sand stings my skin. I am running. I want to see huge waves before the calm.
+                        </p>
+
+                    </div>
+                                    
+                    <div class="col-sm-4 pad-about container-about" >
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/photo_2022-12-06_23-49-07.jpg" alt="Sunset" class="img-fluid img-about">
+                        <div class="middle">
+                            <div class="text">I</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pad-about container-about ">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/photo_2022-12-06_23-48-58.jpg" alt="Mountains"
+                            class="img-fluid img-about">
+                        <div class="middle">
+                            <div class="text">always</div>
+                        </div>
+                    </div>              
+                                                        
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 pad-about container-about ">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/Frame+10-2.png" alt="Waves"
+                            class="img-fluid img-about">
+                        <div class="middle">
+                            <div class="text">see</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pad-about container-about ">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/photo_2022-12-06_23-48-51.jpg" alt="Bay_sunrise"
+                            class="img-fluid img-about">
+                        <div class="middle">
+                            <div class="text">beauty</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pad-about container-about ">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/photo_2022-12-06_23-49-04.jpg" alt="Bay_sunset"
+                            class="img-fluid img-about">
+                        <div class="middle">
+                            <div class="text">everywhere </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>  
+      
+        <div class="row contact">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1 style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin-top: 20px; ">Cont@ct me</h1>
+                        <p style="color: #120302;; font-weight: bold;  font-size: 22px; text-shadow: #fff 1px 0 10px; text-align: center; ">Feel free to chat with me by phone, email, or fill out the form below</p>
+                    </div>                    
+                </div>
+                <div class="row" style=" max-width: 80%; margin: 30px auto;">
+                    
+                    
+                    
+                    
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col">
+                                <p
+                                    style="color: #120302; font-weight: bold;  font-size: 18px; line-height: 22px;   text-shadow: #fff 1px 0 10px; margin: 0;">
+                                    Email</p>
+                                <p>
+                                    <a href="mailto:mariana.romaniuk1008@gmail.com">mariana.romaniuk1008@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p
+                                    style="color: #120302; font-weight: bold;  font-size: 18px; line-height: 22px;   text-shadow: #fff 1px 0 10px;  margin: 0;">
+                                    Mobile number</p>
+                                <p>
+                                    <a href="tel:732-773-8684">+1 732-773-8684</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p
+                                    style="color: #120302; font-weight: bold;  font-size: 18px; line-height: 22px;   text-shadow: #fff 1px 0 10px;  margin: 0;">
+                                    Linkedin</p>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/mariana-romaniuk-74aaa7130" target="_blank">@mariana.romaniuk</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://media.giphy.com/media/TJxrHj7AurjqljHSv2/giphy.gif" alt="Call me" class="img-fluid"
+                            style="margin: 0 auto 10px; display: block; box-shadow: 5px 6px 0.5rem rgba(0,0,0,0.5); height: 370px;">
+                    </div>
+                    <div class="col-sm-4 items-center">                   
+                                                
+                        <div class="m-7" >
+                            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                <input type="hidden" name="access_key" value="1ee7e2d9-23f3-45d2-9681-653787730d7e" />
+                                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            
+                                <div class="mb-6">
+            
+                                    <input type="text" name="name" id="name" placeholder="Name" required
+                                        class="w-full  border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 mb-2"
+                                        style="background-color: #c0ab94; width: 300px; height: 40px; padding-left: 10px;" />
+                                </div>
+                                <div class="mb-6">
+                                    <input type="email" name="email" id="email" placeholder="Email" required
+                                        class="w-full   border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 mb-2"
+                                        style="background-color: #c0ab94; width: 300px; height: 40px; padding-left: 10px;" />
+                                </div>
+                                <div class="mb-6">
+                                    <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                        class="w-full  border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 mb-2 "
+                                        style="background-color: #c0ab94; width: 300px; height: 200px; padding-left: 10px;"
+                                        required></textarea>
+                                </div>
+                                <div class="mb-6">
+                                    <button type="submit"
+                                        class="w-full px-3 py-3  rounded-md focus:bg-indigo-600 focus:outline-none"
+                                        style="background-color: #481c0d; color: #c0ab94; font-weight: bold; box-shadow: 5px 5px 0.5rem rgba(0,0,0,0.5);">
+                                        Send Message
+                                    </button>
+                                </div>
+                                <p class="text-base text-center text-gray-400" id="result"></p>
+                            </form>
+                        </div>                          
+                        
+                    </div>
+                </div>                
+            </div>            
+        </div>     
+             
+                         
+    </div>
+  
+
+<script src="index.js"></script>
+</body>
+</html>

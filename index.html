@@ -35,7 +35,7 @@
         .nav-link{
             color: #300a03;  
             font-weight: bold;
-            font-size: 30px;
+            font-size: 24px;
             padding: 0;
             text-shadow: #fff 2px 0 10px;
         }
@@ -49,7 +49,7 @@
         }
          .footer {
             background-image: url("https://my-bucket-1008.s3.amazonaws.com/footer.png");  
-            height: 130px;    
+            height: 110px;    
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -112,7 +112,7 @@
             padding: 10px;
         }
         
-     /*div {
+    /* div {
         border: dashed #fff;
      }*/
      
@@ -173,11 +173,12 @@ a:hover {
 ::placeholder { 
   color: #300a03;  
 }
-ul, .p-about{
+
+.p-about, ul {
     color: #300a03;
     font-weight: bold;
-    font-size: 22px; 
-    line-height: 28px;   
+    font-size: 18px; 
+    line-height: 24px;   
     text-shadow: #fff 1px 0 10px;
 }
 .width-50{
@@ -202,12 +203,21 @@ margin: 0 auto;
 }
 .title{    
     text-align: center; 
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bold;
     color: #300a03;  
     line-height: 90px;  
     text-shadow: #fff 2px 0 10px; 
     margin-bottom: 50px;       
+}
+.title-1{    
+    text-align: center; 
+    font-size: 70px;
+    font-weight: bold;
+    color: #300a03;  
+    line-height: 90px;  
+    text-shadow: #fff 2px 0 10px; 
+      
 }
 .title-2{
     color: #300a03;
@@ -215,7 +225,7 @@ margin: 0 auto;
      text-align: center; 
      font-size: 32px; 
      text-shadow: #fff 1px 0 10px; 
-     margin: 40px 0;
+     margin-bottom: 40px;
      
 }
 .title-3{
@@ -238,7 +248,7 @@ margin: 0 auto;
 }
 .title-5{    
     text-align: center; 
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bold;
     color: #300a03;  
     line-height: 90px;  
@@ -246,12 +256,12 @@ margin: 0 auto;
     margin-bottom: 20px; 
 }
 .title-5-2{        
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bold;
     color: #300a03;  
     line-height: 90px;  
     text-shadow: #fff 2px 0 10px; 
-    margin-bottom: 20px; 
+    
 }
 .title-6{
     color: #300a03;
@@ -284,19 +294,19 @@ margin: 0 auto;
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resume</a>
+                                <a class="nav-link" href="#resume">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About me</a>
+                                <a class="nav-link" href="#aboutme">About me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacts</a>
+                                <a class="nav-link" href="#contacts">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -309,7 +319,7 @@ margin: 0 auto;
                 <div class="row">
                     <div class="col-sm-6 ">
                     </div>
-                    <div class="col-sm-6 ">
+                    <div class="col-sm-6 " id="home">
                         <p class="mr"> Mariana <br> Romaniuk
                         </p>
                         <p class="start-text  start-text-marg">
@@ -331,7 +341,14 @@ margin: 0 auto;
             <div class="col width-50">
                 <div class="row">
                     <div class="col">
-                        <h1 class="title-2">
+                        <h1 class="title-1" id="resume">
+                            Resume
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title-2" >
                              I know how to work with:
                         </h1>
                     </div>
@@ -412,7 +429,7 @@ margin: 0 auto;
                             <li>Built customer segmentation to optimize campaign performance,</li>
                             <li>Collaborated with creative team regarding email templates,</li>
                             <li>Ran A/B tests for optimization of conversion,</li>
-                            <li>Analyzed campaign performance (OR, CTR, CR),</li>
+                            <li>Analyzed campaign performance,</li>
                             <li>Provided recommendations to increase conversion,</li>
                             <li>Tracked IP reputation, CAN-SPAM rate, and email blacklisting.</li>
                         </ul>
@@ -439,7 +456,7 @@ margin: 0 auto;
             <div class="col margin-b-40">
                 <div class="row">              
                     <div class="col width-50">                       
-                        <h1 class=" title">
+                        <h1 class=" title" id="portfolio">
                             Portfolio
                         </h1>                        
                         <p class="p-about" >
@@ -463,7 +480,7 @@ margin: 0 auto;
                     <div class="col">
                         <div class="row">
                             <div class="col-3">
-                                <img src="https://my-bucket-1008.s3.amazonaws.com/Welcome.png" alt="Welcome email" class="email-template email-1" >
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Welcome.png" alt="Welcome email" class=" img-fluid email-template email-1" >
                             </div>
                             <div class="col-3 padding-20">
                                 <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
@@ -483,7 +500,7 @@ margin: 0 auto;
                                 </p>
                             </div>    
                             <div class="col-3">
-                                <img src="https://my-bucket-1008.s3.amazonaws.com/Discount+for+the+1st+purchase.png" alt="Discount 1st" class="email-template email-1">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Discount+for+the+1st+purchase.png" alt="Discount 1st" class="img-fluid email-template email-1">
                             </div>
                             <div class="col-3 padding-20">
                                 <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
@@ -524,7 +541,7 @@ margin: 0 auto;
                             </div>
                             <div class="col-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Loyalty+program+starts+from+the+3rd+purchase.png" alt="Loyalty program"
-                                    class="email-template email-1">
+                                    class="img-fluid email-template email-1">
                             </div>
                             <div class="col-3 padding-20">
                                 <p style="color: #300a03; font-weight: bold; font-size: 25px; text-shadow: #fff 1px 0 10px; ">
@@ -543,7 +560,7 @@ margin: 0 auto;
                             
                             <div class="col-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Survey.png" alt="Survey"
-                                    class="email-template email-1">
+                                    class="img-fluid email-template email-1">
                             </div>
                             
                         </div>
@@ -556,19 +573,19 @@ margin: 0 auto;
         <div class="row about">
             <div class="col margin-b-40 ">
                 <div class="row">
-                    <div class="col-sm-4 pad-about" >
+                    <div class="col-sm-4 pad-about " id="aboutme">
                         <h1 class=" title-5-2"  >About me</h1> <br>
                         <p class="p-about">
-                        I barely see the road, cold wind blowing in my face. <br>
-                        The sky is dawning. I feel my bike surge beneath me. <br>I want to reach observation point before sunrise.
+                        I barely see the road, cold wind blowing in my face.
+                        The sky is dawning. I feel my bike surge beneath me. I want to reach observation point before sunrise.
                         </p>
                         <p class="p-about">
-                        I barely see the road, cold wind blowing in my face. <br>
-                        Rain in the mountains. Oh no, it's a thunderstorm. <br>I want to get to the top before dark.  
+                        I barely see the road, cold wind blowing in my face.
+                        Rain in the mountains. Oh no, it's a thunderstorm. I want to get to the top before dark.  
                         </p>
                         <p class="p-about">
-                        I barely see the road, cold wind blowing in my face. <br>
-                        The sand stings my skin. I am running. <br>I want to see huge waves before the calm.
+                        I barely see the road, cold wind blowing in my face. 
+                        The sand stings my skin. I am running. I want to see huge waves before the calm.
                         </p>
 
                     </div>
@@ -618,9 +635,9 @@ margin: 0 auto;
         <div class="row contact">
             <div class="col">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" id="contacts">
                         <h1 class=" title-5">Cont@ct me</h1>
-                        <p class="title-4">Feel free to chat with me by phone, email, or fill out the form below</p>
+                        <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px;text-align: center; ">Feel free to chat with me by phone, email, or fill out the form below</p>
                     </div>                    
                 </div>
                 <div class="row" style=" max-width: 80%; margin: 30px auto;">            

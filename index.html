@@ -205,10 +205,16 @@ ul, .p-about{
     text-shadow: #fff 1px 0 10px;
 }
 .width-50{
-max-width: 50%;
+max-width: 80%;
 margin: 0 auto;
 }
-
+.email-template{
+    max-height: 600px;
+    box-shadow: 5px 5px 0.5rem rgba(0,0,0,0.5);
+}
+.padding-20{
+    padding: 20px;
+}
 
     </style>
 </head>
@@ -274,19 +280,13 @@ margin: 0 auto;
                 <div class="row">
                     <div class="col">
                         <h1
-                            style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin-top: 20px; ">
-                            I know how to work with
+                            style="color: #120302; font-weight: bold; text-align: center; font-size: 30px; text-shadow: #fff 1px 0 10px; margin-top: 20px; margin-bottom: 30px; ">
+                            I know how to work with:
                         </h1>
                     </div>
                 </div>
-                <div class="row">
-                
-                    <div class="col">
-                
-                        <img src="https://media.giphy.com/media/6aBqm4gVgfBEvddM6X/giphy.gif" alt="/"
-                            style="height:90px; transform: rotate(90deg);  margin: 0 auto;  display: block;">
-                    </div>
-                
+                <div class="row">             
+                                    
                 </div>
                 <div class="row">
                     <div class="col">
@@ -392,23 +392,9 @@ margin: 0 auto;
                             Portfolio
                         </h1>                        
                         <p class="p-about" >
-                            <span style="opacity: .7;">  Case:</span> Online pet store wants to deploy automated email communication with clients and increase purchases.
-                        </p>
-                        <p class="p-about">
-                            <span style="opacity: .7;"> Solution:</span> Created a series of welcome emails that introduces the store's products and services, presents discounts, loyalty
-                            program benefits, and shares customer success stories.
-                        </p>
-                        <p class="p-about">
-                            Based on customer activity, the journey is divided into three paths:
-                        </p>
-                        <ul>
-                            <li>clients who made only one purchase,</li>
-                            <li>clients who made two and more purchases,</li>
-                            <li>clients who signed up and did not make a purchase.</li>                            
-                        </ul>
-                        <p class="p-about">
-                            <span style="opacity: .7;"> Tone of voice:</span> A cute dog named Bark communicates with customers in a friendly manner.
-                        </p>
+                            <span style="opacity: .7;"> Scenario: </span> An online pet store wants to engage and retain users via email communication and increase purchases.
+
+                        </p>                    
                         
                         
                     </div>        
@@ -419,7 +405,97 @@ margin: 0 auto;
                             Welcome Email Series
                         </p>
                 
-                        <img src="https://my-bucket-1008.s3.amazonaws.com/Frame+11.png" alt="Welcome Email Series" class="img-fluid">
+                        <img src="https://my-bucket-1008.s3.amazonaws.com/Frame+11.png" alt="Welcome Email Series" class="img-fluid" style="email-template">
+                    </div>
+                </div>
+                <div class="row width-50">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Welcome.png" alt="Welcome email" class="email-template" >
+                            </div>
+                            <div class="col-3 padding-20">
+                                <p style="color: #120302; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                                    Welcome email
+                                </p>
+                                <p class="p-about"  >
+                                    <span style="opacity: .7;"> Subject line:</span> Nancy, welcome to BARK! Let's find something for your friend.
+                                </p>
+                                <p  class="p-about">
+                                    <span style="opacity: .7;"> Tone of voice:</span> A cute dog named Bark communicates with customers in a friendly manner. <br><br>
+                                    <span style="opacity: .7;"> Segment:</span> Users received a welcome email 1 minute after signing up. <br><br>
+                                    An email written concisely so as not to distract users from the main points: product categories and free shipping.
+                                    The red button "BUY" also attracts attention. <br><br>
+                                    When customers subscribe to social media or download a mobile app, they earn Pet Points that are easily redeemed for a
+                                    discount.
+
+                                </p>
+                            </div>    
+                            <div class="col-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Discount+for+the+1st+purchase.png" alt="Discount 1st" class="email-template">
+                            </div>
+                            <div class="col-3">
+                                <p style="color: #120302; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                                    Discount for the 1st purchase
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Subject line:</span> Nancy, shop now and we’ll pay 20% of your purchase!
+
+                                </p>
+                                <p>
+                                    Registered users who have not made a purchase will receive this email 3 hours after registration.
+                                    The lead receives a promo code with a 20% discount on the first purchase. The discount ends in 7 days. The main purpose
+                                    of the email is to provide a useful offer to leads and highlight free shipping. If the leads subscribes to social
+                                    networks, they will receive Pet Points that can easily be exchanged for a discount.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="row width-50">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-3">
+                                <p style="color: #120302; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                                    Loyalty program starts from the 3rd purchase
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Subject line:</span> Thanks Nancy! Get your perks with the BARK loyalty program.
+                                </p>
+                                <p>
+                                    Clients will receive a message about the loyalty program the day after their second purchase.
+                                    The email pushes customers to make their next purchase by persuading them to become members of the BARK loyalty program
+                                    and receive discounts of 10%-20% depending on the purchase amount.
+
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Loyalty+program+starts+from+the+3rd+purchase.png" alt="Loyalty program"
+                                    class="email-template">
+                            </div>
+                            <div class="col-3">
+                                <p style="color: #120302; font-weight: bold; font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                                Survey email
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Subject line:</span> Just one question, Nancy
+                                </p>
+                                <p>
+                                    If a customer has just registered and has not made a purchase on the 7th day after registration, they will receive a
+                                    survey email. The main idea of the letter is to interact with customers by asking about their house pets. 
+                                    After providing an answer, the customer receives a Pet Point, which can be exchanged for a discount on a purchase.
+                                
+                                </p>
+                            </div>
+                            
+                            <div class="col-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Survey.png" alt="Survey"
+                                    class="email-template">
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 

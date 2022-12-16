@@ -20,6 +20,69 @@
         
     <title>Portfolio-Mariana-Romaniuk</title>
     <style>
+          @media only screen and (max-width: 600px) {
+        .mr {
+            font-size: 55px !important ;            
+            line-height: 55px !important ;         
+            margin-top: 40px !important ;
+            margin-left: 20px !important ;
+            margin-bottom: 20px !important ;                       
+        }   
+        .start-text{
+            font-size: 26px !important ;           
+            line-height: 28px !important ;     
+            margin-left: 15px !important ;
+            margin-right: 15px !important ;        
+        }
+         .start-text-marg{            
+            max-width: 100% !important ;      
+        }
+        .title-1, .title, .title-5-2, .title-5 {         
+        font-size: 50px !important ;           
+        }
+        .title-2{         
+        font-size: 25px !important ;         
+        }
+        .icons{
+            display: none!important ; 
+        }
+        .icons-2{
+        display: block !important ;
+         }
+         .hide-media-2{
+        display: block !important ;
+         }
+         .title-3{
+        
+        font-size: 25px !important ;  
+        margin-top: 40px !important ;            
+        }
+        .title {
+            margin-bottom: 10px !important ;  
+        }
+        .p-about, ul {
+        
+        font-size: 16px !important ;
+        line-height: 20px !important ;        
+        }
+        .title-4{       
+        font-size: 22px !important ;                   
+        }
+        .title-5-2{
+            text-align: center !important ;            
+        }
+        .pad-t-media{
+            padding-top: 20px !important ; 
+        }
+        .hide-media{
+        display: none;
+        }
+    
+
+        }
+
+
+        
         body,
         html {
             height: 100%;
@@ -74,11 +137,7 @@
             margin-top: 120px;
             margin-bottom: 40px;
             text-shadow: #fff 2px 0 10px;
-        }
-        .mr:hover{
-            font-size: 91px;
-            transition: 0.4s;
-        }
+        }        
         .start-text{
             font-size: 28px;
             font-weight: bold;
@@ -88,8 +147,8 @@
         
         }
         .start-text-marg{
-            margin-top: 40px;          
-
+            margin-top: 40px; 
+            max-width: 80%;       
         }
         .sticky {
             position: fixed;
@@ -112,12 +171,12 @@
             padding: 10px;
         }
         
-    /* div {
+     div {
         border: dashed #fff;
-     }*/
+     }
      
      .container-about {
-  position: relative;
+     position: relative;
   
 }
 
@@ -208,7 +267,7 @@ margin: 0 auto;
     color: #300a03;  
     line-height: 90px;  
     text-shadow: #fff 2px 0 10px; 
-    margin-bottom: 50px;       
+    margin-bottom: 40px;       
 }
 .title-1{    
     text-align: center; 
@@ -276,7 +335,22 @@ margin: 0 auto;
   transform: scale(1.3);
   transition: 0.4s;      
 }
-
+.icons-2{
+    display: none;
+}
+.position{
+    color: #300a03; 
+    font-weight: bold;  
+    font-size: 24px; 
+    text-shadow: #fff 1px 0 10px;
+}
+.company{
+    font-size: 20px; 
+}
+.hide-media-2{
+    display: none;
+}
+ 
 
     </style>
 </head>
@@ -327,7 +401,7 @@ margin: 0 auto;
                             #Marketing_Automation, <br>
                             #Email_Marketing.
                         </p>
-                        <p class="start-text  start-text-marg" style="max-width: 80%;">
+                        <p class="start-text  start-text-marg" >
                             I am a creative and data-driven marketing technology specialist. I have experience ranging from setting up customer
                             journey campaigns to building a multi-channel strategy for client retention.
                 
@@ -356,7 +430,8 @@ margin: 0 auto;
                 <div class="row">             
                                     
                 </div>
-                <div class="row">
+                <div class="row icons">
+                    
                     <div class="col">
                         <img src="https://my-bucket-1008.s3.amazonaws.com/629a430c3e59ee069da94c88.png" class="icon"
                             alt="Google Analytics">
@@ -384,7 +459,7 @@ margin: 0 auto;
                     <div class="col">
                         <img src="https://my-bucket-1008.s3.amazonaws.com/html5-logo-31816.png" class="icon" alt="HTML CSS JS">
                     </div>
-                    <div class="col">
+                    <div class="col-sm-1">
                         <img src="https://my-bucket-1008.s3.amazonaws.com/61045dfc9cd69c000418c11a.png" class="icon" alt="Excel">
                     </div>
                 
@@ -392,6 +467,48 @@ margin: 0 auto;
                         <img src="https://my-bucket-1008.s3.amazonaws.com/62a79050e42d729d928b1756.png" class="icon-2"
                             alt="Visual Studio Code">
                     </div>
+                    
+                </div>
+
+
+                <div class="row icons-2">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/629a430c3e59ee069da94c88.png" class="icon " alt="Google Analytics">
+                            </div>
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/62a5da618945bd77068d0b79.png" class="icon" alt="Customer.io">
+                            </div>
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/62c6bc0beee9410fe137d91e.png" class="icon" alt="Figma">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/62c46460a75b8945b1696706.png" class="icon-2" alt="Twilio">
+                            </div>
+                            
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/kisspng-computer-icons-sql-computer-file-portable-network-some-best-practices-for-coding-and-programming-5ca6a329eed070.2746655415544246179782.png"
+                                    class="icon" alt="SQL">
+                            </div>
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/logo-e2eddd4e.png" class="icon img-fluid" alt="Mailchimp">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/html5-logo-31816.png" class="icon img-fluid" alt="HTML CSS JS">
+                            </div>
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/61045dfc9cd69c000418c11a.png" class="icon" alt="Excel">
+                            </div>
+                            <div class="col">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/62a79050e42d729d928b1756.png" class="icon-2" alt="Visual Studio Code">
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
                 
                 
@@ -405,8 +522,8 @@ margin: 0 auto;
                 
                 <div class="row">
                     <div class="col-sm-4 crm-manager-1">
-                        <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
-                            CRM Manager <br> <span style=" font-size: 22px;"> Magnetics, 5/21 - 1/22</span>
+                        <p class="position">
+                            CRM Manager <br> <span class="company"> Magnetics, 5/21 - 1/22</span>
                         </p>               
                             
                         <ul>
@@ -421,8 +538,8 @@ margin: 0 auto;
                         
                     </div>
                     <div class="col-sm-4 crm-manager-2">
-                        <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
-                            Marketing Automation Specialist <br> <span style=" font-size: 22px;"> Maxitech Software, 9/19 - 10/20</span>
+                        <p class="position">
+                            Marketing Automation Specialist <br> <span class="company"> Maxitech Software, 9/19 - 10/20</span>
                         </p>
                         <ul>
                             <li>Created and scheduled email marketing campaigns,</li>
@@ -435,8 +552,8 @@ margin: 0 auto;
                         </ul>
                     </div>
                     <div class="col-sm-4 crm-manager-3">
-                        <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
-                            Sales Analyst <br> <span style=" font-size: 22px;"> Vodafone Ukraine, 11/16 - 7/19</span>
+                        <p class="position">
+                            Sales Analyst <br> <span class="company"> Vodafone Ukraine, 11/16 - 7/19</span>
                         </p>
                         <ul>
                             <li>Prepared analytical sales reports and dashboards,</li>
@@ -462,9 +579,8 @@ margin: 0 auto;
                         <p class="p-about" >
                             <span style="opacity: .7;"> Scenario: </span> An online pet store wants to engage and retain users via email communication and increase purchases. To achieve this goal, a Welcome Email Series was created. An example of a welcome journey and several emails from the welcome series are shown below.
 
-                        </p>                    
-                        
-                        
+                        </p>                  
+                                                
                     </div>        
                 </div>
                 <div class="row margin-b-50" >
@@ -479,11 +595,11 @@ margin: 0 auto;
                 <div class="row width-50 margin-b-50" >
                     <div class="col">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Welcome.png" alt="Welcome email" class=" img-fluid email-template email-1" >
                             </div>
-                            <div class="col-3 padding-20">
-                                <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            <div class="col-sm-3 padding-20 pad-t-media">
+                                <p class="position">
                                     Welcome email
                                 </p>
                                 <p class="p-about"  >
@@ -499,11 +615,11 @@ margin: 0 auto;
 
                                 </p>
                             </div>    
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Discount+for+the+1st+purchase.png" alt="Discount 1st" class="img-fluid email-template email-1">
                             </div>
-                            <div class="col-3 padding-20">
-                                <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            <div class="col-sm-3 padding-20 pad-t-media">
+                                <p class="position" ">
                                     Discount for the 1st purchase
                                 </p>
                                 <p class="p-about">
@@ -522,11 +638,11 @@ margin: 0 auto;
                     </div>                    
                 </div>
 
-                <div class="row width-50 margin-b-50">
+                <div class="row width-50 margin-b-50 hide-media">
                     <div class="col">
                         <div class="row">
-                            <div class="col-3 padding-20">
-                                <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            <div class="col-sm-3 padding-20 ">
+                                <p class="position">
                                     Loyalty program starts from the 3rd purchase
                                 </p>
                                 <p class="p-about">
@@ -539,12 +655,12 @@ margin: 0 auto;
 
                                 </p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Loyalty+program+starts+from+the+3rd+purchase.png" alt="Loyalty program"
                                     class="img-fluid email-template email-1">
                             </div>
-                            <div class="col-3 padding-20">
-                                <p style="color: #300a03; font-weight: bold; font-size: 25px; text-shadow: #fff 1px 0 10px; ">
+                            <div class="col-sm-3 padding-20">
+                                <p class="position">
                                 Survey email
                                 </p>
                                 <p class="p-about">
@@ -558,11 +674,63 @@ margin: 0 auto;
                                 </p>
                             </div>
                             
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <img src="https://my-bucket-1008.s3.amazonaws.com/Survey.png" alt="Survey"
                                     class="img-fluid email-template email-1">
                             </div>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row width-50 margin-b-50 hide-media-2">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Loyalty+program+starts+from+the+3rd+purchase.png"
+                                    alt="Loyalty program" class="img-fluid email-template email-1">
+                            </div>
+                            <div class="col-sm-3 padding-20 pad-t-media">
+                                <p class="position">
+                                    Loyalty program starts from the 3rd purchase
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Subject line:</span> Thanks Nancy! Get your perks with the BARK loyalty
+                                    program.
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Segment: </span>Clients will receive a message about the loyalty program
+                                    the day after their second purchase. <br><br>
+                                    The email pushes customers to make their next purchase by persuading them to become members of the
+                                    BARK loyalty program
+                                    and receive discounts of 10%-20% depending on the purchase amount.
+                
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <img src="https://my-bucket-1008.s3.amazonaws.com/Survey.png" alt="Survey" class="img-fluid email-template email-1">
+                            </div>
+                            
+                            <div class="col-sm-3 padding-20 pad-t-media">
+                                <p class="position">
+                                    Survey email
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Subject line:</span> Just one question, Nancy
+                                </p>
+                                <p class="p-about">
+                                    <span style="opacity: .7;"> Segment: </span> If a customer has just registered and has not made a
+                                    purchase on the 7th day after registration, they will receive a
+                                    survey email. <br><br> The main idea of the email is to interact with customers by asking about
+                                    their house pets.
+                                    After providing an answer, the customer receives a Pet Point, which can be exchanged for a discount
+                                    on a purchase.
+                
+                                </p>
+                            </div>
+                
+                            
+                
                         </div>
                     </div>
                 </div>
@@ -574,7 +742,7 @@ margin: 0 auto;
             <div class="col margin-b-40 ">
                 <div class="row">
                     <div class="col-sm-4 pad-about " id="aboutme">
-                        <h1 class=" title-5-2"  >About me</h1> <br>
+                        <h1 class=" title-5-2"  >About me</h1> 
                         <p class="p-about">
                         I barely see the road, cold wind blowing in my face.
                         The sky is dawning. I feel my bike surge beneath me. I want to reach observation point before sunrise.
@@ -637,7 +805,7 @@ margin: 0 auto;
                 <div class="row">
                     <div class="col" id="contacts">
                         <h1 class=" title-5">Cont@ct me</h1>
-                        <p style="color: #300a03; font-weight: bold;  font-size: 25px; text-shadow: #fff 1px 0 10px;text-align: center; ">Feel free to chat with me by phone, email, or fill out the form below</p>
+                        <p class="position text-center" ">Feel free to chat with me by phone, email, or fill out the form below</p>
                     </div>                    
                 </div>
                 <div class="row" style=" max-width: 80%; margin: 30px auto;">            
@@ -722,8 +890,7 @@ margin: 0 auto;
             <div class="col " >
                 <p class="title-4">Have a great day 😉</p>
             </div>
-        </div>
-        
+        </div>        
         
     </div>
   
